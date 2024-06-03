@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução dos formulários</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Cadastro</a>
+                    <a class="nav-link" href="#">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <form action="page2.html" method="post">
+    <div class="container mt-5">
+            <h2 class="text-center mb-4">Formulário de um Sistema de Triagem</h2>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputNome4" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputNome4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputSobrenome4" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="inputSobrenome4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@exemplo.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputTelefone4" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="inputTelefone4" placeholder="(00) 0000-0000">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputMotivo4" class="form-label">Motivo da procura ao Hospital</label>
+                        <input type="text" class="form-control" id="inputMotivo4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputTemperatura4" class="form-label">Temperatura Corporal</label>
+                        <input type="number" class="form-control" placeholder="Temperatura Corporal (%)" id="inputTemperatura4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPressão4" class="form-label">Pressão Arterial</label>
+                        <input type="text" class="form-control" placeholder="Pressão Arterial (mmHg)">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputFrequência4" class="form-label">Frequência Cardíaca</label>
+                        <input type="text" class="form-control" placeholder="Frequência Cardíaca (bpm)">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputSaturação4" class="form-label">Saturação de Oxigênio</label>
+                        <input type="number" class="form-control" placeholder="Saturação de Oxigênio (%)">
+                </div>
+                <div class="container mt-5">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="3" placeholder="Sintomas"></textarea>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="3" placeholder="Observações"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>            
+                    <div class="col-md-12 mt-3">
+                    <label class="form-label">Classificação de Risco</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="classificacaoRisco" id="classificacaoAzul" value="azul">
+                        <label class="form-check-label" for="classificacaoAzul">Azul (Não Urgente)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="classificacaoRisco" id="classificacaoVerde" value="verde">
+                        <label class="form-check-label" for="classificacaoVerde">Verde (Pouco Urgente)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="classificacaoRisco" id="classificacaoAmarelo" value="amarelo">
+                        <label class="form-check-label" for="classificacaoAmarelo">Amarelo (Urgente)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="classificacaoRisco" id="classificacaoLaranja" value="laranja">
+                        <label class="form-check-label" for="classificacaoLaranja">Laranja (Muito Urgente)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="classificacaoRisco" id="classificacaoVermelho" value="vermelho">
+                        <label class="form-check-label" for="classificacaoVermelho">Vermelho (Emergente)</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
